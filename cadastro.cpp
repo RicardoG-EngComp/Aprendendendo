@@ -77,53 +77,53 @@ public:
         cout << "Digite o setor do administrativo: ";
         cin.ignore();
         getline(cin, setor);
-        cout << "Digite o período de trabalho: ";
+        cout << "Digite o perÃ­odo de trabalho: ";
         getline(cin, periodoTrabalho);
     }
 
     void ExibirInformacoes() {
         ExibirPessoa();
         cout << "Setor: " << setor << endl;
-        cout << "Período de Trabalho: " << periodoTrabalho << endl;
+        cout << "PerÃ­odo de Trabalho: " << periodoTrabalho << endl;
     }
 };
 
-// Função para exibir o menu e tratar a escolha do usuário
+// FunÃ§Ã£o para exibir o menu e tratar a escolha do usuÃ¡rio
 void exibirMenu() {
     int opcao;
     bool sair = false;
 
     while (!sair) {
-        cout << "\nMenu de Opções:\n";
+        cout << "\nMenu de OpÃ§Ãµes:\n";
         cout << "1. Cadastro de Aluno\n";
         cout << "2. Cadastro de Professor\n";
-        cout << "3. Cadastro de Técnico Administrativo\n";
-        cout << "Digite a opção desejada: ";
+        cout << "3. Cadastro de TÃ©cnico Administrativo\n";
+        cout << "Digite a opÃ§Ã£o desejada: ";
         cin >> opcao;
 
         if (opcao == 1) {
             Aluno aluno;
             aluno.CadastrarInformacoes();
-            cout << "\nInformações do Aluno cadastradas:\n";
+            cout << "\nInformaÃ§Ãµes do Aluno cadastradas:\n";
             aluno.ExibirInformacoes();
             sair = true;
         }
         else if (opcao == 2) {
             Professor professor;
             professor.CadastrarInformacoes();
-            cout << "\nInformações do Professor cadastradas:\n";
+            cout << "\nInformaÃ§Ãµes do Professor cadastradas:\n";
             professor.ExibirInformacoes();
             sair = true;
         }
         else if (opcao == 3) {
             Administrativo administrativo;
             administrativo.CadastrarInformacoes();
-            cout << "\nInformações do Técnico Administrativo cadastradas:\n";
+            cout << "\nInformaÃ§Ãµes do TÃ©cnico Administrativo cadastradas:\n";
             administrativo.ExibirInformacoes();
             sair = true;
         }
         else {
-            cout << "Opção inválida! Por favor, selecione uma opção válida.\n";
+            cout << "OpÃ§Ã£o invÃ¡lida! Por favor, selecione uma opÃ§Ã£o vÃ¡lida.\n";
         }
     }
 }
