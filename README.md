@@ -1,6 +1,1 @@
-#include <iostream>
-
-int main()
-{
-  std::cout << " Estarei postando tudo que estou aprendendo em C++ // I'll be sharing everthing i learn in C++";
-}
+Compartilhando projetos que eu fizer ao longo do meu processo de aprendizado em python
